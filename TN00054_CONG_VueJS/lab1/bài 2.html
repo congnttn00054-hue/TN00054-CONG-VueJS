@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>Bài 2 - Navbar Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .navbar-custom {
+            background-color: #e9f5f2;
+            /* xanh nhạt giống hình */
+        }
+
+        .navbar-custom .nav-link {
+            color: #000;
+            font-weight: 500;
+        }
+
+        .navbar-custom .nav-link:hover {
+            color: #198754;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold text-success" href="#">
+                <img src="images/eat-clean.png" alt="Logo" height="32" class="me-2">
+                Energy Pilates
+            </a>
+
+            <!-- TOGGLE MOBILE -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <!-- Menu trái -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">📰 Bài viết</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">🎬 Video</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ℹ️ Giới thiệu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">📅 Sự kiện</a>
+                    </li>
+
+                    <!-- TÀI KHOẢN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            👤 Tài khoản
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                            <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                            <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Ngôn ngữ -->
+                <div class="d-flex">
+                    <a href="#" class="nav-link">Tiếng Việt</a>
+                    <span class="mx-1">|</span>
+                    <a href="#" class="nav-link">Tiếng Anh</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- DEMO CONTENT -->
+    <div class="container mt-4">
+        <p><strong>TN00054:</strong> ăn sạch sống khỏe.</p>
+    </div>
+
+</body>
+
+</html>
