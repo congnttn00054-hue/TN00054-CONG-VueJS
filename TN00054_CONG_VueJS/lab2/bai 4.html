@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2 - Bài 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lab1/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="../lab1/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <h3>Bài tập ứng dụng Modal</h3>
+        <h>TN00054_Nguyễn Thành Công-VueJS</h2>
+            <hr>
+
+            <!-- NÚT MỞ MODAL -->
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                Tài khoản
+            </button>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- MODAL HEADER -->
+                <div class="modal-header">
+                    <h5 class="modal-title">ĐĂNG NHẬP / ĐĂNG KÝ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- MODAL BODY -->
+                <div class="modal-body">
+
+                    <!-- NAV TABS -->
+                    <ul class="nav nav-tabs mb-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#tab-register">
+                                Đăng ký
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#tab-login">
+                                Đăng nhập
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- TAB CONTENT -->
+                    <div class="tab-content">
+
+                        <!-- TAB ĐĂNG KÝ -->
+                        <div id="tab-register" class="tab-pane fade show active">
+                            <h6>Form Đăng Ký Thông Tin</h6>
+
+                            <form>
+                                <div class="mb-2">
+                                    <label class="form-label">Họ và Tên</label>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label class="form-label">Mật Khẩu</label>
+                                    <input type="password" class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label class="form-label">Xác Nhận Mật Khẩu</label>
+                                    <input type="password" class="form-control">
+                                </div>
+
+                                <button class="btn btn-primary mt-2">
+                                    Đăng Ký
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- TAB ĐĂNG NHẬP -->
+                        <div id="tab-login" class="tab-pane fade">
+                            <h6>Form Đăng Nhập</h6>
+
+                            <form>
+                                <div class="mb-2">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control">
+                                </div>
+
+                                <div class="mb-2">
+                                    <label class="form-label">Mật Khẩu</label>
+                                    <input type="password" class="form-control">
+                                </div>
+
+                                <button class="btn btn-primary mt-2">
+                                    Đăng Nhập
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
